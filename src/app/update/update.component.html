@@ -1,0 +1,9 @@
+<div class="container" style="margin-top: 10px;">
+    <form (ngSubmit)="onSubmit()" [formGroup]="updateUser">
+        <input style="margin:3px ;" type="text" name="name" formControlName="name" id="name" placeholder="Name"><br>
+        <input style="margin:3px ;" type="password" name="password" formControlName="password" id="password" placeholder="Password"><br>
+        <input style="margin:3px ;" type="profession" name="profession" formControlName="profession" id="profession" placeholder="Profession"><br><br>
+        <button type="submit" style="margin-right:10px;">Update Details</button>
+        <input type="number" id="uid" formControlName="uid" placeholder="Id">
+    </form><br><br>
+</div>

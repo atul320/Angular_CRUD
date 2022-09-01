@@ -1,0 +1,20 @@
+<div>
+  <table>
+    <thead>
+      <th>Id</th>
+      <th>Name</th>
+      <th>Password</th>
+      <th>Profession</th>
+    </thead>
+    <tbody *ngFor="let api1 of api">
+      <td>{{api1.id}}</td>
+      <td>{{api1.name}}</td>
+      <td>{{api1.password}}</td>
+      <td>{{api1.profession}}</td>
+    </tbody>
+  </table><br><br>
+  <form (ngSubmit)="onSubmit()" [formGroup]="delete">
+  <button style="margin-right: 10px;" type="submit">Delete</button>
+  <input type="number" placeholder="Id" formControlName="uid">
+</form>
+</div>
