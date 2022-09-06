@@ -10,10 +10,10 @@ app.use(cors());
 //sql connection
 const mysql = require('mysql')
 const conn = mysql.createConnection({
-   host: '172.16.15.165',
-   user: 'admin',
-   password: 'Kalkine@123',
-   database: 'atul.bhardwaj'
+   host: '_hostport_',
+   user: '_username_',
+   password: '_password_',
+   database: '_databaseName_'
 })
 
 //View User
